@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED785206211CB1E60095ABA0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED785205211CB1E60095ABA0 /* APIManager.swift */; };
 		ED90CA1D211C803D00E2EA7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA1C211C803D00E2EA7E /* AppDelegate.swift */; };
-		ED90CA1F211C803D00E2EA7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA1E211C803D00E2EA7E /* ViewController.swift */; };
 		ED90CA22211C803D00E2EA7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED90CA20211C803D00E2EA7E /* Main.storyboard */; };
 		ED90CA25211C803D00E2EA7E /* redditpage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA23211C803D00E2EA7E /* redditpage.xcdatamodeld */; };
 		ED90CA27211C803E00E2EA7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED90CA26211C803E00E2EA7E /* Assets.xcassets */; };
@@ -16,6 +16,8 @@
 		ED90CA35211C803E00E2EA7E /* redditpageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA34211C803E00E2EA7E /* redditpageTests.swift */; };
 		ED90CA40211C803E00E2EA7E /* redditpageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA3F211C803E00E2EA7E /* redditpageUITests.swift */; };
 		ED90CA4F211C845600E2EA7E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED90CA4E211C845600E2EA7E /* Alamofire.framework */; };
+		ED90CA51211C8AEF00E2EA7E /* redditpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED90CA50211C8AEF00E2EA7E /* redditpageViewController.swift */; };
+		ED90CA53211C8E2F00E2EA7E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED90CA4E211C845600E2EA7E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +37,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		ED90CA54211C8E2F00E2EA7E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED90CA53211C8E2F00E2EA7E /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		ED785205211CB1E60095ABA0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		ED90CA19211C803D00E2EA7E /* redditpage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redditpage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED90CA1C211C803D00E2EA7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED90CA1E211C803D00E2EA7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED90CA21211C803D00E2EA7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED90CA24211C803D00E2EA7E /* redditpage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = redditpage.xcdatamodel; sourceTree = "<group>"; };
 		ED90CA26211C803E00E2EA7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +67,7 @@
 		ED90CA3F211C803E00E2EA7E /* redditpageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redditpageUITests.swift; sourceTree = "<group>"; };
 		ED90CA41211C803E00E2EA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED90CA4E211C845600E2EA7E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		ED90CA50211C8AEF00E2EA7E /* redditpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redditpageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				ED90CA1C211C803D00E2EA7E /* AppDelegate.swift */,
-				ED90CA1E211C803D00E2EA7E /* ViewController.swift */,
 				ED90CA20211C803D00E2EA7E /* Main.storyboard */,
+				ED90CA50211C8AEF00E2EA7E /* redditpageViewController.swift */,
+				ED785205211CB1E60095ABA0 /* APIManager.swift */,
 				ED90CA26211C803E00E2EA7E /* Assets.xcassets */,
 				ED90CA28211C803E00E2EA7E /* LaunchScreen.storyboard */,
 				ED90CA2B211C803E00E2EA7E /* Info.plist */,
@@ -150,6 +168,7 @@
 				ED90CA15211C803C00E2EA7E /* Sources */,
 				ED90CA16211C803C00E2EA7E /* Frameworks */,
 				ED90CA17211C803C00E2EA7E /* Resources */,
+				ED90CA54211C8E2F00E2EA7E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,7 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED90CA1F211C803D00E2EA7E /* ViewController.swift in Sources */,
+				ED90CA51211C8AEF00E2EA7E /* redditpageViewController.swift in Sources */,
+				ED785206211CB1E60095ABA0 /* APIManager.swift in Sources */,
 				ED90CA1D211C803D00E2EA7E /* AppDelegate.swift in Sources */,
 				ED90CA25211C803D00E2EA7E /* redditpage.xcdatamodeld in Sources */,
 			);

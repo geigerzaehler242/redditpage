@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  redditpage
 //
-//  Created by fernando marto on 2018-08-09.
+//  Created by fm on 2018-08-09.
 //  Copyright © 2018 f. All rights reserved.
 //
 
